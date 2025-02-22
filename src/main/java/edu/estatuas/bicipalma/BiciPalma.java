@@ -1,8 +1,8 @@
 package edu.estatuas.bicipalma;
 
-import edu.estatuas.domain.Bicicleta;
-import edu.estatuas.domain.Estacion;
-import edu.estatuas.domain.TarjetaUsuario;
+import edu.estatuas.domain.bicicleta.Bicicleta;
+import edu.estatuas.domain.estacion.Estacion;
+import edu.estatuas.domain.tarjetausuario.TarjetaUsuario;
 
 public class BiciPalma {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package edu.estatuas.domain;
+package edu.estatuas.domain.bicicleta;
 
 public class Bicicleta {
     
@@ -10,5 +10,10 @@ public class Bicicleta {
 
     public int getid() {
         return this.id;
+    }
+
+    @Override
+    public String toString() {
+        return "id: " + getid();
     }
 }

@@ -1,4 +1,4 @@
-package edu.estatuas.domain;
+package edu.estatuas.domain.estacion;
 
 public class Estacion {
     
