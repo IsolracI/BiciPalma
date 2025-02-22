@@ -32,6 +32,6 @@ class Anclaje {
     @Override
     public String toString() {
         return "ocupado: " + isOcupado();
-    //el codigo de David tiene un Boolean.toString(isOcupado()), esto no es suficiente
+    //el codigo de David tiene un Boolean.toString(isOcupado()), esto no es suficiente?
     }
 }
