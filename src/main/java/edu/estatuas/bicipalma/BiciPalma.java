@@ -1,30 +1,34 @@
 package edu.estatuas.bicipalma;
 
-import edu.estatuas.domain.bicicleta.Bicicleta;
-import edu.estatuas.domain.estacion.Estacion;
-import edu.estatuas.domain.tarjetausuario.TarjetaUsuario;
-
 public class BiciPalma {
-    public static void main(String[] args) {
+
+	public static void main(String[] args) {
 
 		Estacion estacion = new Estacion(1, "Manacor", 6);
 
-
+		/*
+		 * caso TEST visualizar estado de la estacion:
+		 * muestra id, direccion, anclaje 
+		 */
 
 		System.out.println("\n **** caso TEST visualizar estado de la estacion **** \n");
+
 		estacion.consultarEstacion();
 
-
+		/*
+		 * caso TEST visualizar anclajes libres
+		 */
 
 		System.out.println("\n **** caso TEST visualizar anclajes libres **** \n");
+
 		System.out.println("anclajesLibres: " + estacion.anclajesLibres());
+
 		estacion.consultarAnclajes();
 
+		/*
+		 * caso TEST anclar bicicleta(s) 
+		 */
 
-
-			}
-
-/* 
 		System.out.println("\n **** caso TEST anclar bicicleta(s) **** \n");
 
 		int[] bicicletas = { 291, 292, 293, 294 };
@@ -38,17 +42,17 @@ public class BiciPalma {
 		System.out.println("anclajes libres tras generar " + bicicletas.length 
 							+ " bicis: " + estacion.anclajesLibres());
 
-		
-		******** Caso TEST consultar bicicletas ancladas ********
-		
+		/*
+		 * Caso TEST consultar bicicletas ancladas 
+		 */
 
 		System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
 
 		estacion.consultarAnclajes();
 
-		
-		******** Caso TEST retirar bicicleta ********
-		
+		/*
+		 * Caso TEST retirar bicicleta 
+		 */
 
 		System.out.println("\n **** caso TEST retirar bicicleta **** \n");
 
@@ -63,9 +67,9 @@ public class BiciPalma {
 
 		System.out.println("anclajesLibres: " + estacion.anclajesLibres());
 
-		
-		******** Caso TEST tarjeta inactiva ********
-		
+		/*
+		 * Caso TEST tarjeta inactiva 
+		 */
 
 		System.out.println("\n **** caso TEST tarjeta inactiva **** \n");
 
@@ -77,6 +81,5 @@ public class BiciPalma {
 		estacion.retirarBicicleta(tarjetaUsuario);
 
 		estacion.consultarAnclajes();
-*/
-
+	}
 }
