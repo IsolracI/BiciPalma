@@ -15,6 +15,35 @@ public class BiciPalma {
 
 		estacion.consultarEstacion();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 		/*
 		 * caso TEST visualizar anclajes libres
 		 */
