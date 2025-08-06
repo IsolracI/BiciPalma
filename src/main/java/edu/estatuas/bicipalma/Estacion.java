@@ -44,17 +44,6 @@ public class Estacion {
         System.out.println("bicicleta " + bici.getId() + " anclada en el anclaje Nº " + posicion);
     }
 
-    /*
-    public void anclarBicicleta(Bicicleta bici) {
-        for (Anclaje anclaje : anclajes()) {
-            if (!anclaje.isOcupado()) {
-                anclaje.anclarBici(bici);
-                break;
-            }
-        }
-    }
- */
-
     public void anclarBicicleta(Bicicleta bici) {
         int posicion = 1;
 
