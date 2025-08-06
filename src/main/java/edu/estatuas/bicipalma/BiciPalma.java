@@ -25,35 +25,6 @@ public class BiciPalma {
 
 		estacion.consultarAnclajes();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-
-
 		/*
 		 * caso TEST anclar bicicleta(s) 
 		 */
