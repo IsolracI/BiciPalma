@@ -48,13 +48,30 @@ public class Estacion {
         return anclajesLibres;
     }
 
+    private void mostrarBicicleta(Movil bicicleta, int posicion) {
+        StringBuilder mensaje = new StringBuilder();
+        mensaje.append("Anclaje ");
+        mensaje.append(posicion);
+        mensaje.append(" ");
+        mensaje.append(bicicleta.getId());
+        System.out.println(mensaje.toString());
+    }
+
+    private void mostrarAnclaje(int posicion) {
+        StringBuilder mensaje = new StringBuilder();
+        mensaje.append("Anclaje ");
+        mensaje.append(posicion);
+        mensaje.append("  libre");
+        System.out.println(mensaje.toString());
+    }
+
     public void consultarAnclajes() {
         for (int i = 0; i < anclajes().length; i++) {
             if (anclajes()[i].isOcupado()) {
-                System.out.println("Anclaje: " + (i + 1) + " " + anclajes()[i].getBici());
+                mostrarBicicleta(anclajes()[i].getBici(), i + 1);
             }
             else {
-                System.out.println("Anclaje: " + (i + 1) + "\tlibre");
+                mostrarAnclaje(i + 1);
             }
         }
     }
