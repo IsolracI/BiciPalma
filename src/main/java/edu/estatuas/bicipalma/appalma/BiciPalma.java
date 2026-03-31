@@ -70,19 +70,19 @@ public class BiciPalma {
 
         System.out.println("anclajesLibres: " + estacion.anclajesLibres());
 
-//        /*
-//         * Caso TEST tarjeta inactiva
-//         */
-//
-//        System.out.println("\n **** caso TEST tarjeta inactiva **** \n");
-//
-//        tarjetaUsuario.setActivada(false);
-//
-//        System.out.println("¿tarjeta de usuario activada? (true/false): "
-//                + estacion.leerTarjetaUsuario(tarjetaUsuario));
-//
-//        estacion.retirarBicicleta(tarjetaUsuario);
-//
-//        estacion.consultarAnclajes();
+        /*
+         * Caso TEST tarjeta inactiva
+         */
+
+        System.out.println("\n **** caso TEST tarjeta inactiva **** \n");
+
+        tarjetaUsuario.setActivada(false);
+
+        System.out.println("¿tarjeta de usuario activada? (true/false): "
+                + estacion.leerTarjetaUsuario(tarjetaUsuario));
+
+        estacion.retirarBicicleta(tarjetaUsuario);
+
+        estacion.consultarAnclajes();
     }
 }
