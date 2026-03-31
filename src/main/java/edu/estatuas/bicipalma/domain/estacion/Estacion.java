@@ -50,7 +50,10 @@ public class Estacion {
     public void consultarAnclajes() {
         for (int i = 0; i < anclajes().length; i++) {
             if (anclajes()[i].isOcupado()) {
-                System.out.println("bicicleta: " + anclajes()[i].getBici() + "anclada en el anclaje: " + i + 1);
+                System.out.println("Anclaje: " + (i + 1) + " " + anclajes()[i].getBici());
+            }
+            else {
+                System.out.println("Anclaje: " + (i + 1) + "\tlibre");
             }
         }
     }

@@ -40,17 +40,17 @@ public class BiciPalma {
             bicicleta = new Bicicleta(id);
             estacion.anclarBicicleta(bicicleta);
         }
-//
-//        System.out.println("anclajes libres tras generar " + bicicletas.length
-//                + " bicis: " + estacion.anclajesLibres());
-//
-//        /*
-//         * Caso TEST consultar bicicletas ancladas
-//         */
-//
-//        System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
-//
-//        estacion.consultarAnclajes();
+
+        System.out.println("anclajes libres tras generar " + bicicletas.length
+                + " bicis: " + estacion.anclajesLibres());
+
+        /*
+         * Caso TEST consultar bicicletas ancladas
+         */
+
+        System.out.println("\n **** caso TEST consultar bicicletas ancladas **** \n");
+
+        estacion.consultarAnclajes();
 //
 //        /*
 //         * Caso TEST retirar bicicleta
