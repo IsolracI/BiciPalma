@@ -28,7 +28,6 @@ public class Anclajes {
 
     void ocuparAnclaje(int posicion, Movil bici) {
         anclajes()[posicion].anclarBici(bici);
-        System.out.println("bicicleta: " + bici + " anclada en el anclaje: " + (posicion + 1));
     }
 
     boolean isAnclajeOcupado(int posicion) {

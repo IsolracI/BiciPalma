@@ -48,38 +48,40 @@ public class Estacion {
         return anclajesLibres;
     }
 
-    private void mostrarBicicleta(Movil bicicleta, int posicion) {
-        StringBuilder mensaje = new StringBuilder();
-        mensaje.append("Anclaje ");
-        mensaje.append(posicion);
-        mensaje.append(" ");
-        mensaje.append(bicicleta.getId());
-        System.out.println(mensaje.toString());
-    }
-
-    private void mostrarAnclaje(int posicion) {
-        StringBuilder mensaje = new StringBuilder();
-        mensaje.append("Anclaje ");
-        mensaje.append(posicion);
-        mensaje.append("  libre");
-        System.out.println(mensaje.toString());
-    }
-
     public void consultarAnclajes() {
         for (int i = 0; i < anclajes().length; i++) {
             if (anclajes()[i].isOcupado()) {
-                mostrarBicicleta(anclajes()[i].getBici(), i + 1);
+                System.out.println("Anclaje: " + (i + 1) + " " + anclajes()[i].getBici());
             }
             else {
-                mostrarAnclaje(i + 1);
+                System.out.println("Anclaje: " + (i + 1) + "\tlibre");
             }
         }
+    }
+
+    private void mostrarBicicleta(Movil bicicleta, int posicion) {
+        StringBuilder mensaje = new StringBuilder();
+        mensaje.append("bicicleta retirada: ");
+        mensaje.append(bicicleta.getId());
+        mensaje.append(" del anclaje: ");
+        mensaje.append(posicion);
+        System.out.println(mensaje.toString());
+    }
+
+    private void mostrarAnclaje(Movil bicicleta, int posicion) {
+        StringBuilder mensaje = new StringBuilder();
+        mensaje.append("bicicleta ");
+        mensaje.append(bicicleta.getId());
+        mensaje.append(" anclada en el anclaje ");
+        mensaje.append(posicion);
+        System.out.println(mensaje.toString());
     }
 
     public void anclarBicicleta(Movil bici) {
         for (int i = 0; i < anclajes().length; i++) {
             if (!anclajes()[i].isOcupado()) {
                 this.anclajes.ocuparAnclaje(i, bici);
+                mostrarAnclaje(bici, i + 1);
                 break;
             }
         }
@@ -97,6 +99,7 @@ public class Estacion {
         }
 
         if  (tarjeta.isActivada()) {
+            mostrarBicicleta(this.anclajes.getBiciAt(posicion), posicion + 1);
             this.anclajes.liberarAnclaje(posicion);
         }
     }
