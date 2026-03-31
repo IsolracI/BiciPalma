@@ -44,4 +44,14 @@ public class Estacion {
 
         return anclajesLibres;
     }
+
+    public void consultarAnclajes() {
+        for (int i = 0; i < anclajes().length; i++) {
+            if (anclajes()[i].isOcupado()) {
+                System.out.println("bicicleta: " + anclajes()[i].getBici() + "anclada en el anclaje: " + i + 1);
+            }
+        }
+    }
+
+
 }

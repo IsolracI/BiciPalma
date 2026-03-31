@@ -28,6 +28,6 @@ public class Anclaje {
 
     @Override
     public String toString() {
-        return "anclaje libre: " + isOcupado();
+        return "bicicleta: " + getBici();
     }
 }
