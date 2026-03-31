@@ -1,6 +1,7 @@
 package edu.estatuas.bicipalma.domain.estacion;
 
 import edu.estatuas.bicipalma.domain.bicicleta.Movil;
+import edu.estatuas.bicipalma.domain.tarjetausuario.Autenticacion;
 
 public class Estacion {
     private final int id;
@@ -64,6 +65,22 @@ public class Estacion {
                 this.anclajes.ocuparAnclaje(i, bici);
                 break;
             }
+        }
+    }
+
+    public boolean leerTarjetaUsuario(Autenticacion tarjeta) {
+        return tarjeta.isActivada();
+    }
+
+    public void retirarBicicleta(Autenticacion tarjeta) {
+        int posicion = this.anclajes.seleccionarAnclaje();
+
+        while (!anclajes()[posicion].isOcupado()) {
+            posicion = this.anclajes.seleccionarAnclaje();
+        }
+
+        if  (tarjeta.isActivada()) {
+            this.anclajes.liberarAnclaje(posicion);
         }
     }
 
