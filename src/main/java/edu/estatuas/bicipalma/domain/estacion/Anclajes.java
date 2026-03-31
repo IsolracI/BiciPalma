@@ -13,8 +13,8 @@ public class Anclajes {
     }
 
     private void crearAnclajes() {
-        for (Anclaje anclaje : this.anclajes) {
-            new Anclaje();
+        for (int  i = 0; i < anclajes.length; i++) {
+            anclajes[i] = new Anclaje();
         }
     }
 
