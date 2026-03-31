@@ -1,5 +1,7 @@
 package edu.estatuas.bicipalma.domain.estacion;
 
+import edu.estatuas.bicipalma.domain.bicicleta.Movil;
+
 public class Estacion {
     private final int id;
     private final String direccion;
@@ -53,5 +55,13 @@ public class Estacion {
         }
     }
 
+    public void anclarBicicleta(Movil bici) {
+        for (int i = 0; i < anclajes().length; i++) {
+            if (!anclajes()[i].isOcupado()) {
+                this.anclajes.ocuparAnclaje(i, bici);
+                break;
+            }
+        }
+    }
 
 }

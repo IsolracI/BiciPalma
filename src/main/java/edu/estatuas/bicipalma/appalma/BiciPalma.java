@@ -1,5 +1,6 @@
 package edu.estatuas.bicipalma.appalma;
 
+import edu.estatuas.bicipalma.domain.bicicleta.Bicicleta;
 import edu.estatuas.bicipalma.domain.estacion.Estacion;
 
 public class BiciPalma {
@@ -26,19 +27,19 @@ public class BiciPalma {
 
         estacion.consultarAnclajes();
 
-//        /*
-//         * caso TEST anclar bicicleta(s)
-//         */
-//
-//        System.out.println("\n **** caso TEST anclar bicicleta(s) **** \n");
-//
-//        int[] bicicletas = { 291, 292, 293, 294 };
-//
-//        Bicicleta bicicleta = null;
-//        for (int id : bicicletas) {
-//            bicicleta = new Bicicleta(id);
-//            estacion.anclarBicicleta(bicicleta);
-//        }
+        /*
+         * caso TEST anclar bicicleta(s)
+         */
+
+        System.out.println("\n **** caso TEST anclar bicicleta(s) **** \n");
+
+        int[] bicicletas = { 291, 292, 293, 294 };
+
+        Bicicleta bicicleta = null;
+        for (int id : bicicletas) {
+            bicicleta = new Bicicleta(id);
+            estacion.anclarBicicleta(bicicleta);
+        }
 //
 //        System.out.println("anclajes libres tras generar " + bicicletas.length
 //                + " bicis: " + estacion.anclajesLibres());
