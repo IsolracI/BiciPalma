@@ -28,4 +28,20 @@ public class Estacion {
         System.out.println("direccion: " + getDireccion());
         System.out.println("numeroAnclajes: " +  numAnclajes());
     }
+
+    private Anclaje[] anclajes() {
+        return anclajes.anclajes();
+    }
+
+    public int anclajesLibres() {
+        int anclajesLibres = 0;
+
+        for (Anclaje anclaje : anclajes()) {
+            if (!anclaje.isOcupado()) {
+                anclajesLibres++;
+            }
+        }
+
+        return anclajesLibres;
+    }
 }

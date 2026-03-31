@@ -15,14 +15,14 @@ public class BiciPalma {
         System.out.println("\n **** caso TEST visualizar estado de la estacion **** \n");
 
         estacion.consultarEstacion();
-//
-//        /*
-//         * caso TEST visualizar anclajes libres
-//         */
-//
-//        System.out.println("\n **** caso TEST visualizar anclajes libres **** \n");
-//
-//        System.out.println("anclajesLibres: " + estacion.anclajesLibres());
+
+        /*
+         * caso TEST visualizar anclajes libres
+         */
+
+        System.out.println("\n **** caso TEST visualizar anclajes libres **** \n");
+
+        System.out.println("anclajesLibres: " + estacion.anclajesLibres());
 //
 //        estacion.consultarAnclajes();
 //
