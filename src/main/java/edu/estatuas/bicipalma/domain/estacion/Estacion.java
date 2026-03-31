@@ -10,4 +10,22 @@ public class Estacion {
         this.direccion = direccion;
         anclajes = new Anclajes(numAnclajes);
     }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public String getDireccion() {
+        return this.direccion;
+    }
+
+    private int numAnclajes() {
+        return anclajes.numAnclajes();
+    }
+
+    public void consultarEstacion() {
+        System.out.println("id: " + getId());
+        System.out.println("direccion: " + getDireccion());
+        System.out.println("numeroAnclajes: " +  numAnclajes());
+    }
 }

@@ -7,14 +7,14 @@ public class BiciPalma {
 
         Estacion estacion = new Estacion(1, "Manacor", 6);
 
-//        /*
-//         * caso TEST visualizar estado de la estacion:
-//         * muestra id, direccion, anclaje
-//         */
-//
-//        System.out.println("\n **** caso TEST visualizar estado de la estacion **** \n");
-//
-//        estacion.consultarEstacion();
+        /*
+         * caso TEST visualizar estado de la estacion:
+         * muestra id, direccion, anclaje
+         */
+
+        System.out.println("\n **** caso TEST visualizar estado de la estacion **** \n");
+
+        estacion.consultarEstacion();
 //
 //        /*
 //         * caso TEST visualizar anclajes libres
